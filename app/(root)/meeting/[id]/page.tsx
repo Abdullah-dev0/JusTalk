@@ -1,9 +1,5 @@
-import React from 'react'
-
 const Meeting = () => {
-  return (
-    <div>Meeting</div>
-  )
-}
+   return <section>Meeting</section>;
+};
 
-export default Meeting
+export default Meeting;
