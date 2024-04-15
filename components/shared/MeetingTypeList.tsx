@@ -47,7 +47,7 @@ const MeetingTypeList = () => {
             className="bg-yellow-1"
          />
          <MeetingModal
-            isOpen={meetingStates === "isScheduleMeeting"}
+            isOpen={meetingStates === "isInstantMeeting"}
             onClose={() => setMeetingStates(undefined)}
             title="Create Meeting"
             handleClick={createMeeting}
