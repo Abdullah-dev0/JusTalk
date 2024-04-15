@@ -21,7 +21,7 @@ const Home = () => {
                      Upcoming Meeting at:12:30
                   </h1>
                </div>
-               <div className="flex flex-col gap-2">
+               <div className="flex flex-col gPthap-2">
                   <h1 className="text-4xl font-extrabold lg:text-7xl">
                      {time}
                   </h1>

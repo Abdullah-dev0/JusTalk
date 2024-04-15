@@ -26,6 +26,18 @@ const config = {
             blue: {
                1: "#0E78F9",
             },
+            orange: {
+               1: "#FF742E",
+            },
+            sky: {
+               1: " #0E78F9",
+            },
+            purple: {
+               1: "#830EF9",
+            },
+            yellow: {
+               1: "#F9A90E",
+            },
          },
          keyframes: {
             "accordion-down": {
