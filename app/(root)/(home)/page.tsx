@@ -3,25 +3,21 @@ import MeetingTypeList from "@/components/shared/MeetingTypeList";
 const Home = () => {
    const now = new Date();
 
-   const time = now
-      .toLocaleTimeString("en-PK", {
-         hour: "2-digit",
-         minute: "2-digit",
-      })
-      .toUpperCase();
-   const date = new Intl.DateTimeFormat("en-PK", { dateStyle: "full" }).format(
+   const time = now.toLocaleTimeString("en-US", {
+      hour: "2-digit",
+      minute: "2-digit",
+   });
+   const date = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(
       now
    );
    return (
       <section className="flex size-full flex-col gap-5 text-white">
-         <div className="bg-hero h-[300px] w-full bg-cover rounded-[20px]">
-            <div className="flex flex-col h-full  py-12 px-12  max-md:px-5 max-md:py-8 lg:p-11">
-               <div className="flex-1">
-                  <h1 className="glassmorphism max-w-[273px] opacity-80 rounded py-2 text-center text-base font-normal">
-                     Upcoming Meeting at:12:30
-                  </h1>
-               </div>
-               <div className="flex flex-col gPthap-2">
+         <div className="h-[303px] w-full rounded-[20px] bg-hero bg-cover">
+            <div className="flex h-full flex-col justify-between max-md:px-5 max-md:py-8 lg:p-11">
+               <h2 className="glassmorphism max-w-[273px] rounded py-2 text-center text-base font-normal">
+                  Upcoming Meeting at: 12:30 PM
+               </h2>
+               <div className="flex flex-col gap-2">
                   <h1 className="text-4xl font-extrabold lg:text-7xl">
                      {time}
                   </h1>
@@ -31,6 +27,7 @@ const Home = () => {
                </div>
             </div>
          </div>
+
          <MeetingTypeList />
       </section>
    );

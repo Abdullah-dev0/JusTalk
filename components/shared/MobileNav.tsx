@@ -28,7 +28,7 @@ const MobileNav = () => {
                   className="cursor-pointer sm:hidden"
                />
             </SheetTrigger>
-            <SheetContent side="right" className="border-none bg-dark-1">
+            <SheetContent side="left" className="border-none bg-dark-1">
                <Link href="/" className="flex items-center gap-1">
                   <Image
                      src="/icons/logo.svg"
@@ -43,6 +43,7 @@ const MobileNav = () => {
                      <section className=" flex h-full flex-col gap-6 pt-16 text-white">
                         {sidebarLinks.map((item) => {
                            const isActive = pathname === item.route;
+
                            return (
                               <SheetClose asChild key={item.route}>
                                  <Link

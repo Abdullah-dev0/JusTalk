@@ -2,12 +2,20 @@
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 import HomeCard from "./HomeCard";
+import MeetingModal from "./MettingModel";
 
 const MeetingTypeList = () => {
    const [meetingStates, setMeetingStates] = useState<
       "isScheduleMeeting" | "isJoiningMeeting" | "isInstantMeeting" | undefined
    >(undefined);
    const Router = useRouter();
+
+   // Create Meeting
+
+   const createMeeting = () => {
+      console.log("Create Meeting");
+   };
+
    return (
       <section className="grid grid-cols-1 gap-5 md:grid-cols-2 xl:grid-cols-4 w-full max-w-[1080px] lg:mx-auto">
          <HomeCard
@@ -37,6 +45,12 @@ const MeetingTypeList = () => {
             icon="/icons/recordings.svg"
             handleClick={() => Router.push("/recordings")}
             className="bg-yellow-1"
+         />
+         <MeetingModal
+            isOpen={meetingStates === "isScheduleMeeting"}
+            onClose={() => setMeetingStates(undefined)}
+            title="Create Meeting"
+            handleClick={createMeeting}
          />
       </section>
    );
