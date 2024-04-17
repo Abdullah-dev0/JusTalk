@@ -13,7 +13,6 @@ const RootLayout = ({ children }: Readonly<{ children: ReactNode }>) => {
    return (
       <main className="relative">
          <Header />
-
          <div className="flex">
             <Sidebar />
 
