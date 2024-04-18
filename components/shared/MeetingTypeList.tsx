@@ -33,7 +33,7 @@ const MeetingTypeList = () => {
          }
          const callId = crypto.randomUUID();
          const call = client.call("default", callId);
-         if (!call) throw new Error("Failed to create call");
+         if (!call) throw new Error("Failed to create callId");
 
          const startTime =
             values.dateTime.toISOString() || new Date().toISOString();
@@ -52,7 +52,6 @@ const MeetingTypeList = () => {
          if (!values.description) {
             router.push(`/meeting/${callId}`);
          }
-
          toast.success("Meeting created successfully");
       } catch (error: any) {
          console.log(error);
