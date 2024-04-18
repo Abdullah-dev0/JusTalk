@@ -13,7 +13,7 @@ const EndCallButton = () => {
       throw new Error(
          "useStreamCall must be used within a StreamCall component."
       );
-      
+
    const { useLocalParticipant } = useCallStateHooks();
    const localParticipant = useLocalParticipant();
 
