@@ -15,7 +15,6 @@ export const useGetCalls = () => {
          setIsLoading(true);
 
          try {
-            // https://getstream.io/video/docs/react/guides/querying-calls/#filters
             const { calls } = await client.queryCalls({
                sort: [{ field: "starts_at", direction: -1 }],
                filter_conditions: {
