@@ -1,11 +1,11 @@
 "use client";
 
+import Loader from "@/components/shared/Loader";
 import MeetingRoom from "@/components/shared/MeetingRoom";
 import MeetingSetup from "@/components/shared/MeetingSetup";
 import { useGetCallById } from "@/hooks/useGetCallById";
 import { useUser } from "@clerk/nextjs";
 import { StreamCall, StreamTheme } from "@stream-io/video-react-sdk";
-import { Loader } from "lucide-react";
 import { useParams } from "next/navigation";
 import { useState } from "react";
 

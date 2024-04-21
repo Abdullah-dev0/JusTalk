@@ -1,9 +1,13 @@
-const UpcommingPage = () => {
+import CallList from "@/components/shared/Calllist";
+
+const UpcomingPage = () => {
    return (
-      <section className="flex size-full flex-col gap-5 text-white">
-         <h1 className="text-3xl font-bold">UpcommingPage</h1>
+      <section className="flex size-full flex-col gap-10 text-white">
+         <h1 className="text-3xl font-bold">Upcoming Meeting</h1>
+
+         <CallList type="upcoming" />
       </section>
    );
 };
 
-export default UpcommingPage;
+export default UpcomingPage;
