@@ -1,13 +1,8 @@
-import { Metadata } from "next";
 import { ReactNode } from "react";
 
 import Header from "@/components/shared/Header";
 import Sidebar from "@/components/shared/SideBar";
 
-export const metadata: Metadata = {
-   title: "YOOM",
-   description: "A workspace for your team, powered by Stream Chat and Clerk.",
-};
 
 const RootLayout = ({ children }: Readonly<{ children: ReactNode }>) => {
    return (

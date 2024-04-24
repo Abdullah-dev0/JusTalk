@@ -64,10 +64,8 @@ const MeetingRoom = () => {
                />
             </div>
          </div>
-         {/* video layout and call controls */}
          <div className="fixed bottom-0 flex w-full flex-wrap py-4  items-center justify-center gap-5">
-            <CallControls onLeave={() => router.push(`/`)} />
-
+            <CallControls onLeave={() => router.push("/")} />
             <DropdownMenu>
                <div className="flex items-center">
                   <DropdownMenuTrigger className="cursor-pointer rounded-2xl bg-[#19232d] px-4 py-2 hover:bg-[#4c535b]  ">
