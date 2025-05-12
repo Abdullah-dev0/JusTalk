@@ -1,6 +1,6 @@
 <div align="center">
   <br />
-    <a href="https://youtu.be/R8CIO1DZ2b8](https://jus-talk.vercel.app" target="_blank">
+    <a href="(https://jus-talk.vercel.app" target="_blank">
       <img src="https://github.com/Abdullah-dev0/JusTalk/assets/116773738/241a3f41-d999-48d1-b1f6-61fc93b97232" alt="Project Banner">
     </a>
 </div>
